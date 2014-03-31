@@ -24,12 +24,7 @@ marx_geo <- read.table("marx-geo.csv.gz", sep = ",", header = TRUE,
 str(marx_geo)
 summary(marx_geo)
 
-
-
-
-
-
-
-
-
+## To get started let's look at counts of types of connections by
+## country and protocol
+with(marx_geo, ftable(country, proto))
 
